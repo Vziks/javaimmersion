@@ -13,14 +13,17 @@ class EnumExample {
 
     enum TieSize {
         SMALL("small", 100) {
+            @Override
             public String getTieClass() {
                 return "s";
             }
         }, MEDIUM("medium", 200) {
+            @Override
             public String getTieClass() {
                 return "m";
             }
         }, BIG("big", 300) {
+            @Override
             public String getTieClass() {
                 return "b";
             }

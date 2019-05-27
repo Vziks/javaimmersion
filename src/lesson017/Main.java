@@ -7,16 +7,10 @@ public class Main {
     public static void main(String[] args) {
 
         EnumExample.TieSize tieB = EnumExample.TieSize.BIG;
-        System.out.println(tieB);
-        System.out.println(tieB.getMils());
-        System.out.println(tieB.getName());
-        System.out.println(tieB.getTieClass());
+        print(tieB);
 
         EnumExample.TieSize tieM = EnumExample.TieSize.MEDIUM;
-        System.out.println(tieM);
-        System.out.println(tieM.getMils());
-        System.out.println(tieM.getName());
-        System.out.println(tieM.getTieClass());
+        print(tieM);
 
         CoffeeSize coffeeSize = CoffeeSize.MEDIUM;
         System.out.println(coffeeSize);
@@ -25,5 +19,12 @@ public class Main {
         Random rand = new Random();
 
         rand.nextInt(10);
+    }
+
+    private static void print(EnumExample.TieSize tie) {
+        System.out.println(tie);
+        System.out.println(tie.getMils());
+        System.out.println(tie.getName());
+        System.out.println(tie.getTieClass());
     }
 }

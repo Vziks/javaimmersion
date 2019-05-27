@@ -1,8 +1,9 @@
 package lesson020;
 
 public class StatExample {
+
+    static StatExample statExample = new StatExample(5);
     int x = returnInt();
-    static StatExample statexample = new StatExample(5);
     static int k = 4;
     int i = returnInt();
     static int j = returnIntStatic();
@@ -15,6 +16,7 @@ public class StatExample {
         System.out.println("clear");
     }
 
+
     StatExample() {
         System.out.println("constructor");
     }
@@ -22,6 +24,7 @@ public class StatExample {
     StatExample(int i) {
         System.out.println("constructor with arguments");
     }
+
     static int returnIntStatic() {
         System.out.println("returnIntStatic " + k);
         return StatExample.k;
